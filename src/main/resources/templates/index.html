@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Hello | Home</title>
+</head>
+<body>
+<h1>Hi there!</h1>
+
+<span th:each="lineArray : ${info}">
+                <span th:each="line: ${lineArray}">
+                    <p th:text="${line}"></p>
+                </span>
+        </span>
+
+</body>
+</html>
